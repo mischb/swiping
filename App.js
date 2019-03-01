@@ -17,12 +17,15 @@ export default class App extends React.Component {
     );
   }
 
-  renderNoMoreCards() {
+  renderNoMoreCards(marginTop) {
+    console.log(marginTop);
     return (
-      <Card title="No More!">
-        <Text style={{ marginBottom: 10 }}>Done!</Text>
-        <Button backgroundColor="#04A9F4" title="Get More" />
-      </Card>
+      <View style={{ marginTop }}>
+        <Card title="No More!">
+          <Text style={{ marginBottom: 10 }}>No more cards!</Text>
+          <Button backgroundColor="#04A9F4" title="Get More" />
+        </Card>
+      </View>
     );
   }
 
