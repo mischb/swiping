@@ -71,6 +71,7 @@ class Deck extends Component {
   resetPosition() {
     Animated.spring(this.position, { toValue: { x: 0, y: 0 } }).start();
   }
+
   getCardStyle() {
     const rotate = this.position.x.interpolate({
       inputRange: [-SCREEN_WIDTH * 1.5, 0, SCREEN_WIDTH * 1.5],
